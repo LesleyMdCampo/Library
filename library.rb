@@ -21,7 +21,7 @@ class Library
   def borrowed_books
     #iterates over books in library and prints if book is checked out
     @books.each do |book|
-      puts book.title + book.borrower.name if book.status == "checked_out"
+      puts book.title + ' - ' + book.borrower.name if book.status == "checked_out"
     end
   end
 
